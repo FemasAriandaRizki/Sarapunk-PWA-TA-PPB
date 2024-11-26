@@ -134,7 +134,7 @@ input {
 .subtitle {
     font-size: 24px;
     font-weight: bold;
-    margin: 10px 10px 8px;
+    margin: 10px 10px 8px 10px;
     color: #333;
 }
 
