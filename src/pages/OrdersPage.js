@@ -13,7 +13,7 @@ export default function OrdersPage({ orders, setOrders }) {
 
     return (
         <main>
-            <h3 className="title">Pesanan</h3>
+            <h3 className="title-o">Pesanan</h3>
             <ul className="order-list">
                 {orders.map((item, index) => (
                     <li key={index} className="order-item">

@@ -9,7 +9,7 @@ export default function FavoritesPage({ favorites, setFavorites }) {
 
     return (
         <main>
-            <h3 className="title">Favorit</h3>
+            <h3 className="title-f">Favorit</h3>
             <ul className="favorite-list">
                 {favorites.map((item, index) => (
                     <li key={index} className="favorite-item">

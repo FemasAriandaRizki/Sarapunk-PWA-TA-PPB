@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import OrdersPage from "./pages/OrdersPage";
 import FavoritesPage from "./pages/FavoritesPage";
 import ProfilePage from "./pages/ProfilePage";
+import GachaPage from "./pages/GachaPage"; // Import halaman Gacha
 
 // Components
 import Header from "./components/header";
@@ -64,8 +65,10 @@ function App() {
                         }
                     />
                     <Route path="/profile" element={<ProfilePage />} />
+                    <Route path="/gacha" element={<GachaPage />} />{" "}
+                    {/* Tambahkan rute Gacha */}
                 </Routes>
-                <BottomNav />
+                <BottomNav /> {/* Navbar dengan ikon tambahan */}
             </Router>
         </div>
     );

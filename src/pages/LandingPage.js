@@ -44,7 +44,7 @@ export default function LandingPage({ onAddToOrder, onAddToFavorites }) {
     return (
         <main>
             <p className="title-LP">Produk Sarapan Praktis</p>
-            <p className="perintah-LP">Silakan pilih nasi dan isian dari menu sarapan praktis di bawah:</p>
+            <p className="perintah-LP">Silakan pilih nasi dan isian dari menu di bawah:</p>
             {isLoading ? (
                 <p className="loading">Loading...</p>
             ) : (

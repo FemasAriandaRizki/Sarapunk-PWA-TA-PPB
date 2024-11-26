@@ -15,12 +15,31 @@ main {
 }
   
 .title {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 16px;
 }
 
+.title-o {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    margin: 0 10px;
+}
 
+.title-f {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    margin: 0 10px;
+}
+
+.title-g {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin: 0 10px;
+}
   
 input {
     width: 250px;
@@ -96,14 +115,14 @@ input {
 
 /* Title dan subtitle */
 .title-LP {
-    font-size: 26px;
-    font-weight: bold;
     margin: 12px 0 6px 0;
     text-align: center;
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .perintah-LP {
-    font-size: 12px;
+    font-size: 14px;
     margin: 8px 0 2px 0;
     text-align: center;
 }
@@ -123,7 +142,7 @@ input {
 .favorite-list {
     list-style: none;
     padding: 0;
-    margin: 16px 0;
+    margin: 6px 0;
 }
 
 .order-item,
@@ -144,7 +163,7 @@ input {
 }
 
 .order-summary {
-    margin-top: 16px;
+    margin-top: 1px;
     padding: 10px;
     border-top: 1px solid #ddd;
     display: flex;
@@ -233,4 +252,28 @@ input {
 
 .qr-modal .close-btn:hover {
     background: #d32f2f;
+}
+
+.gacha-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.gacha-btn:hover {
+    background-color: #0056b3;
+}
+
+.gacha-card {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
 }
