@@ -1,0 +1,24 @@
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Pastikan di atas elemen lain */
+}
+
+.splash-logo {
+    width: 150px; /* Sesuaikan ukuran logo */
+    margin-bottom: 16px;
+}
+
+.splash-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f44336;
+}

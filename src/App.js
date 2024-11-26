@@ -10,10 +10,12 @@ import ProfilePage from "./pages/ProfilePage";
 // Components
 import Header from "./components/header";
 import BottomNav from "./components/navigation";
+import SplashScreen from "./components/SplashScreen";
 
 import "./App.css";
 
 function App() {
+    const [isSplashVisible, setSplashVisible] = useState(true);
     const [orders, setOrders] = useState([]);
     const [favorites, setFavorites] = useState([]);
 
@@ -27,6 +29,10 @@ function App() {
         }
     };
 
+    if (isSplashVisible) {
+        return <SplashScreen onComplete={() => setSplashVisible(false)} />;
+    }
+
     return (
         <div className="App">
             <Header />
@@ -37,8 +43,8 @@ function App() {
                         path="/"
                         element={
                             <LandingPage
-                                onAddToOrder={addToOrder} // Properti diteruskan
-                                onAddToFavorites={addToFavorites} // Properti diteruskan
+                                onAddToOrder={addToOrder}
+                                onAddToFavorites={addToFavorites}
                             />
                         }
                     />
