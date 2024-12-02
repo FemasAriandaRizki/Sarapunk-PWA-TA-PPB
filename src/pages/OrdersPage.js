@@ -17,14 +17,18 @@ export default function OrdersPage({ orders, setOrders }) {
             <ul className="order-list">
                 {orders.map((item, index) => (
                     <li key={index} className="order-item">
-                        <span>{item.name}</span>
-                        <span>Rp {item.price.toLocaleString()}</span>
-                        <button
-                            className="remove-btn"
-                            onClick={() => handleRemoveOrder(index)}
-                        >
-                            ✖
-                        </button>
+                        <span className="order-item-1">{item.name}</span>
+                        <div className="order-item-2">
+                            <span>
+                                Rp {item.price.toLocaleString()}
+                            </span>
+                            <button
+                                className="remove-btn"
+                                onClick={() => handleRemoveOrder(index)}
+                            >
+                                ✖
+                            </button>
+                        </div>
                     </li>
                 ))}
             </ul>

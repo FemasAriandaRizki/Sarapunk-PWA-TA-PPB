@@ -160,6 +160,8 @@ input {
     color: red;
     cursor: pointer;
     font-size: 18px;
+    padding-left: 15px;
+    justify-content: right;
 }
 
 .order-summary {
